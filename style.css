@@ -1,0 +1,76 @@
+body {
+    background: greenyellow;
+}
+#cnv {
+    position: absolute;
+    display: block;
+    margin: auto;
+    border: 3px solid blue;
+    top: 430px;
+    left: 0;
+    border-radius: 50%;
+}
+ #v {
+    position: absolute;
+    display: block;
+    width: 400px;
+    top: 200px;
+    left: 0;
+} 
+#b {
+    position: absolute;
+    background: red;
+    color: white;
+    width: 60px;
+    height: 60px;
+    left: 200px;
+    top: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 50%;
+    border: 3px solid #4b4b4b;
+    cursor: pointer;
+}
+.out {
+    font-size: 28px;
+    font-family: monospace;
+    font-style: italic;
+    color: blue;
+}
+
+.t {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 340px;
+    left: 150px;
+    border-radius: 50%;
+    animation: 20s t ease-in alternate;
+    opacity: 0;
+}
+@keyframes t {
+    0% {
+        transform: translate(-100px, -150px);
+        opacity: 0;
+    }
+    25% {
+        transform: translate(20px, 10px);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(20px, 10px);
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    75% {
+        transform: translate(20px, 10px);
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: translate(20px, 10px);
+        opacity: 1;
+        transform: rotateY(-360deg);
+    }
+}

@@ -57,11 +57,12 @@ body {
     25% {
         transform: translate(20px, 10px);
         opacity: 1;
+        transform: rotateY(0deg);
     }
     50% {
         transform: translate(20px, 10px);
         opacity: 1;
-        transform: rotateY(0deg);
+        transform: rotateY(180deg);
     }
     75% {
         transform: translate(20px, 10px);
@@ -71,6 +72,6 @@ body {
     100% {
         transform: translate(20px, 10px);
         opacity: 1;
-        transform: rotateY(-360deg);
+        transform: scale(4);
     }
 }
